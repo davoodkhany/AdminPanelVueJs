@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SidebarAdminPanel></SidebarAdminPanel>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SidebarAdminPanel from './components//Layouts/SidebarAdminPanel'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+  SidebarAdminPanel
   }
+
 }
 </script>
 
