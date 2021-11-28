@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <SidebarAdminPanel></SidebarAdminPanel>
+    <v-app>
+
+       <SidebarAdminPanel></SidebarAdminPanel>
+
+
+
+      <v-main>
+        <v-container fluid>
+         
+        </v-container>
+      </v-main>
+    </v-app>
+   
   </div>
 </template>
 
 <script>
-import SidebarAdminPanel from './components//Layouts/SidebarAdminPanel'
+import SidebarAdminPanel from "./components/Layouts/SidebarAdminPanel.vue";
 
 export default {
-  name: 'App',
-  components:{
-  SidebarAdminPanel
-  }
-
-}
+  components: {
+    SidebarAdminPanel,
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

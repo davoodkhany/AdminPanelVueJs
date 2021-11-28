@@ -1,16 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
-import { BootstrapVue,IconsPlugin } from 'bootstrap-vue'
+import Vue from "vue";
+import '../node_modules/vuetify/dist/vuetify.min.css';
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import Vuetify from 'vuetify'
 
-Vue.config.productionTip = false
+import App from "./App.vue";
 
 
-Vue.use(BootstrapVue)
-Vue.use(IconsPlugin)
+// Vue.config.productionTip = false
+
+Vue.use(Vuetify)
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  vuetify : new Vuetify(),
+  render: h => h(App)
+}).$mount("#app");
