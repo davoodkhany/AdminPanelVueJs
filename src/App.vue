@@ -1,13 +1,11 @@
 <template>
   <div id="app">
     <v-app>
-        <v-row>
-          <v-col class="col-2"><SidebarAdminPanel></SidebarAdminPanel></v-col>
-          <v-col class="col-9"><AppBarAdminPanel></AppBarAdminPanel> </v-col>
-        </v-row>
-     
-      
-      
+      <v-row>
+        <SidebarAdminPanel  class="pt-5 mt-3" @emit="Minis"  ></SidebarAdminPanel>
+
+        <AppBarAdminPanel class="mt-10 ml-10" :mini="mini" ></AppBarAdminPanel>
+      </v-row>
 
       <v-main>
         <v-container fluid> </v-container>
@@ -25,5 +23,23 @@ export default {
     SidebarAdminPanel,
     AppBarAdminPanel,
   },
+
+  data(){
+    return {
+      mini :true
+    }
+  },
+  methods:{
+    Minis(value){
+      this.mini = value
+     
+    }
+  }
 };
 </script>
+
+<style scoped>
+#app {
+  background-color: #f5f5f5;
+}
+</style>
