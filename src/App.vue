@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <v-app>
-      <v-row>
-        <SidebarAdminPanel  class="pt-5 mt-3" @emit="Minis"  ></SidebarAdminPanel>
+      <v-row animate__fadeInLeft>
+        <SidebarAdminPanel  class="pt-5 mt-3 " @emit="Minis"  ></SidebarAdminPanel>
 
-        <AppBarAdminPanel class="mt-10 ml-10" :mini="mini" ></AppBarAdminPanel>
+        <AppBarAdminPanel class="mt-10 ml-10 " :mini="mini" ></AppBarAdminPanel>
       </v-row>
 
       <v-main>

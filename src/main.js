@@ -1,6 +1,6 @@
 import Vue from "vue";
 import '../node_modules/vuetify/dist/vuetify.min.css';
-
+import 'animate.css';
 import 'font-awesome/css/font-awesome.min.css' // Ensure you are using css-loader
 
 
