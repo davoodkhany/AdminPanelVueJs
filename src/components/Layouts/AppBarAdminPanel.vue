@@ -7,12 +7,18 @@
   >
     <v-spacer></v-spacer>
     <v-btn icon>
-      <v-icon color="red">fa-heart</v-icon>
+      <v-badge color="#7367f0" content="6" offset-y="12" offset-x="10">
+        <v-icon>shopping-cart</v-icon>
+      </v-badge>
     </v-btn>
-      <div>
-            <h5>DavoodKhani</h5>
-    <p>admin</p>
-      </div>
+    <v-btn icon>
+      <v-icon>fa-bell-o</v-icon>
+    </v-btn>
+
+    <div>
+      <h5>Davood Khani</h5>
+      <p>admin</p>
+    </div>
     <AppBarProfile></AppBarProfile>
   </v-app-bar>
 </template>
