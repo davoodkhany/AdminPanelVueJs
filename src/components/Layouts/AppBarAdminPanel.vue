@@ -6,13 +6,18 @@
     :style="mini ? 'max-width:90%' : 'max-width:78%'"
   >
     <v-spacer></v-spacer>
-    <v-btn icon>
-      <v-badge color="#7367f0" content="6" offset-y="12" offset-x="10">
-        <v-icon>shopping-cart</v-icon>
+    <v-btn icon small >
+      <v-icon>fa-light fa-magnifying-glass</v-icon>
+    </v-btn>
+    <v-btn icon >
+      <v-badge  color="#7367f0" content="6" offset-y="12" offset-x="10">
+        <v-icon>fa-light fa-cart-shopping</v-icon>
       </v-badge>
     </v-btn>
-    <v-btn icon>
-      <v-icon>fa-bell-o</v-icon>
+    <v-btn icon class="mr-2">
+      <v-badge color="red" content="5" offset-x="12" offset-y="10">
+        <v-icon>fa fa-bell-o</v-icon>
+      </v-badge>
     </v-btn>
 
     <div>

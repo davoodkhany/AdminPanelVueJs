@@ -47,14 +47,14 @@ export default {
   data() {
     return {
       items: [
-        { title: "Profile", icon: "fa-user" },
-        { title: "Inbox", icon: "fa-envelope" },
-        { title: "Task", icon: " fa-check-square-o" },
-        { title: "Chat", icon: " fa-comments-o" },
-        { title: "Setting", icon: "fa-cogs" },
-        { title: "Pricing", icon: "fa-credit-card" },
-        { title: "FAQ", icon: " fa-question-circle" },
-        { title: "Logout", icon: "fa-sign-out" },
+        { title: "Profile", icon: "far fa-user" },
+        { title: "Inbox", icon: "far fa-envelope" },
+        { title: "Task", icon: "fa-light fa-calendar-check" },
+        { title: "Chat", icon: "fa-light fa-message" },
+        { title: "Setting", icon: "far fa-cogs" },
+        { title: "Pricing", icon: "far fa-credit-card" },
+        { title: "FAQ", icon: "far fa-question-circle" },
+        { title: "Logout", icon: "far fa-sign-out" },
       ],
     };
   },
