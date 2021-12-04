@@ -11,6 +11,13 @@
 .fa , .far{
     font-size:20px !important
 }
+
+
+
+.footer-h6 h6{
+
+}
+
 </style>
 
 
@@ -26,7 +33,6 @@ export default {
                 {fa:'fa-light fa-calendar-check'},
                 {fa:'fa-regular fa-star'},
                 
-
             ]
         }
     }

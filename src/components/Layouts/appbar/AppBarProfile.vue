@@ -39,6 +39,11 @@
 .v-list-item:hover{
     background-color:rgba(115, 103, 240, .1)
 }
+
+
+.footer_h6 ul li a{
+
+}
 </style>
 
 
