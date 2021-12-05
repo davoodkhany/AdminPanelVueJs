@@ -14,10 +14,8 @@
       </v-btn>
     </template>
 
-
-
     <vue-scroll :ops="ops">
-      <v-card class="child-element" height="500px">
+      <v-card class="child-element" height="500px"  >
         <v-card-title>
           <span class="text-h6" gray>Notification</span>
           <v-spacer></v-spacer>
@@ -65,12 +63,13 @@
                 <v-list-item-subtitle>{{ card.subtitle }}</v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
+
             <v-divider></v-divider>
           </div>
         </v-list>
         <div style="padding: 10px">
           <v-btn
-            color="deep-purple lighten-1 white--text deep-purple"
+            color="deep-purple lighten-1 white--text"
             class="v-btn--block"
           >
             Read all notifications
@@ -83,9 +82,12 @@
 
 <script>
 import vuescroll from "vuescroll";
+
+
 export default {
   components: {
     "vue-scroll": vuescroll,
+
   },
   data() {
     return {
