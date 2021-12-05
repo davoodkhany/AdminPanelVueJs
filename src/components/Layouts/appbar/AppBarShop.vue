@@ -97,6 +97,6 @@ export default {
 <style scoped>
 .menuable__content__active {
   top: 98px !important;
-  left: 840px !important;
+  left:60% !important;
 }
 </style>

@@ -29,7 +29,7 @@
 <style scoped>
 .menuable__content__active {
   top: 98px !important;
-  left: 1260px !important;
+  left: 83% !important;
   width: 12rem;
 }
 
