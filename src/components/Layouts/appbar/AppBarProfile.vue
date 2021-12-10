@@ -8,6 +8,7 @@
               src="https://www.skincarely.com.au/wp-content/uploads/2021/11/Asset-1.svg"
             ></v-img>
           </v-avatar>
+          
         </v-badge>
       </template>
 
