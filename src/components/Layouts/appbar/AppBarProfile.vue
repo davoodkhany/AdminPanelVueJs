@@ -42,9 +42,7 @@
 }
 
 
-.footer_h6 ul li a{
 
-}
 </style>
 
 

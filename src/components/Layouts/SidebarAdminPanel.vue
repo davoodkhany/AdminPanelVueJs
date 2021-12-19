@@ -1,6 +1,6 @@
 <template>
-  <v-card >
-    <v-navigation-drawer  v-model="drawer" :mini-variant.sync="mini" permanent  @click="$emit('emit', mini = !mini)">
+  <v-card p-5 style="padding: 20px" >
+    <v-navigation-drawer   v-model="drawer" :mini-variant.sync="mini" permanent  @click="$emit('emit', mini = !mini)">
       <v-list-item class="px-2">
         <v-img v-if="mini" @click="$emit('emit', mini = !mini)" src="https://www.skincarely.com.au/wp-content/uploads/2021/11/Asset-1.svg" width="20px"></v-img>
          <v-img else="mini = false" @click="$emit('emit', mini = !mini)" src="https://www.skincarely.com.au/wp-content/uploads/2021/11/Asset-3.png" width="20px"></v-img>
