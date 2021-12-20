@@ -33,6 +33,7 @@
             v-model="item.active"
             no-action
           >
+          
             <template small v-slot:activator>
               <v-icon small class="mr-3">{{ item.action }}</v-icon>
               <v-list-item-content>
@@ -45,6 +46,7 @@
                 <v-list-item-title
                   ><a href="/en">{{ child.title }}</a></v-list-item-title
                 >
+
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
