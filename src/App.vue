@@ -2,9 +2,9 @@
   <div id="app">
     <v-app>
       <v-row animate__fadeInLeft>
-        <SidebarAdminPanel  class="pt-5 mt-3 " @emit="Minis"  ></SidebarAdminPanel>
+        <SidebarAdminPanel class="pt-5 mt-3 " @emit="Minis"  ></SidebarAdminPanel>
 
-        <AppBarAdminPanel class="p-5 mt-10 ml-10" :mini="mini" ></AppBarAdminPanel>
+        <AppBarAdminPanel class="mt-10 ml-10" style="max-height: 100vh!important;" :mini="mini" ></AppBarAdminPanel>
       </v-row>
 
       <v-main>
