@@ -56,12 +56,49 @@
             <div class="d-flex">
               <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
                 <v-icon
-                  style="font-size: 40px !important; padding: 3.7rem"
+                  style="font-size: 35px !important; padding: 3.7rem"
                   x-large
-                  dense
-                 
-                  color="purple"
-                  class="pa-2 rounded-circle"
+                  color="blue"
+                  class="pa-2 rounded-circle blue lighten-4 mr-3"
+                  >fa-light fa-wave-pulse</v-icon
+                >
+                <div>
+                  <h4 class="headline">230k</h4>
+                  <span class="subtitle-1">Sales</span>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
+                <v-icon
+                  style="font-size: 35px !important; padding: 3.7rem"
+                  x-large
+                  color="blue"
+                  class="pa-2 rounded-circle blue lighten-4 mr-3"
+                  >fa-light fa-wave-pulse</v-icon
+                >
+                <div>
+                  <h4 class="headline">230k</h4>
+                  <span class="subtitle-1">Sales</span>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
+                <v-icon
+                  style="font-size: 35px !important; padding: 3.7rem"
+                  x-large
+                  color="blue"
+                  class="pa-2 rounded-circle blue lighten-4 mr-3"
+                  >fa-light fa-wave-pulse</v-icon
+                >
+                <div>
+                  <h4 class="headline">230k</h4>
+                  <span class="subtitle-1">Sales</span>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
+                <v-icon
+                  style="font-size: 35px !important; padding: 3.7rem"
+                  x-large
+                  color="blue"
+                  class="pa-2 rounded-circle blue lighten-4 mr-3"
                   >fa-light fa-wave-pulse</v-icon
                 >
                 <div>
