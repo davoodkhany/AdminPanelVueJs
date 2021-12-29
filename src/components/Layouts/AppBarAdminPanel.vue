@@ -21,60 +21,58 @@
       <App-Bar-Profile></App-Bar-Profile>
     </v-app-bar>
     <v-content class="mt-3 d-flex">
-     
-        <v-row no-gutters>
-          <v-col cols="12" sm="6" md="4" class="">
-            <v-card :elevation="n - 1" width="410px" class="rounded-md d-flex tile pa-2">
-              <div>
-                <v-card-title class="text-p"> OVERLINE </v-card-title>
-                <v-card-subtitle> You have won gold medal </v-card-subtitle>
-                <v-card-text>
-                  <a class="display-1"> $48.9k </a>
-                </v-card-text>
-                <v-card-actions>
-                  <v-btn color=" deep-purple lighten-1 white--text">
-                    View Sales
-                  </v-btn>
-                </v-card-actions>
-              </div>
+      <v-row no-gutters>
+        <v-col cols="12" sm="6" md="4" class="">
+          <v-card width="400px" class="rounded-md d-flex pa-2">
+            <div>
+              <v-card-title class="text-p"> OVERLINE </v-card-title>
+              <v-card-subtitle> You have won gold medal </v-card-subtitle>
+              <v-card-text>
+                <a class="display-1"> $48.9k </a>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn color=" deep-purple lighten-1 white--text">
+                  View Sales
+                </v-btn>
+              </v-card-actions>
+            </div>
 
-              <div>
-                <v-img
-                  width="100%"
-                  style="left: 90px"
-                  src="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/img/badge.0fa134b5.svg"
+            <div>
+              <v-img
+                width="100%"
+                style="left: 90px"
+                src="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/img/badge.0fa134b5.svg"
+              >
+              </v-img>
+            </div>
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="6" md="8">
+          <v-card class="rounded-md pa-2">
+            <div class="justify-space-between d-flex">
+              <span class="headline">Statistics</span>
+              <span class="subtitle-1">Updated 1 month ago</span>
+            </div>
+            <div class="d-flex">
+              <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
+                <v-icon
+                  style="font-size: 40px !important; padding: 3.7rem"
+                  x-large
+                  dense
+                 
+                  color="purple"
+                  class="pa-2 rounded-circle"
+                  >fa-light fa-wave-pulse</v-icon
                 >
-                </v-img>
+                <div>
+                  <h4 class="headline">230k</h4>
+                  <span class="subtitle-1">Sales</span>
+                </div>
               </div>
-            </v-card>
-          </v-col>
-          <v-col cols="12" sm="6" md="8">
-            <v-card  :elevation="n - 1" class="rounded-md d-flex pa-2">
-              <div>
-                <v-card-title class="text-p"> OVERLINE </v-card-title>
-                <v-card-subtitle> You have won gold medal </v-card-subtitle>
-                <v-card-text>
-                  <a class="display-1"> $48.9k </a>
-                </v-card-text>
-                <v-card-actions>
-                  <v-btn color=" deep-purple lighten-1 white--text">
-                    View Sales
-                  </v-btn>
-                </v-card-actions>
-              </div>
-
-              <div>
-                <v-img
-                  width="100%"
-                  style="left: 90px"
-                  src="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/img/badge.0fa134b5.svg"
-                >
-                </v-img>
-              </div>
-            </v-card>
-          </v-col>
-        </v-row>
-
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-content>
   </v-col>
 </template>
