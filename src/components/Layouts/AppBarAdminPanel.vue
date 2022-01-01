@@ -127,16 +127,18 @@
         </v-col>
       </v-row>
 
-      
-        <v-col cols="12" sm="6" md="4">
-          <v-card class="rounded-md d-flex pa-2"> sadsa </v-card>
-          <v-card> asdasd </v-card>
-          <v-card class="mt-7 rounded-md d-flex pa-2"
-            >asdasdasd</v-card
-          >
-        </v-col>
-        <v-col cols="12" sm="6" md="8"> </v-col>
-  
+      <v-row class="m-0" style="margin:0px;">
+      <v-col cols="12" sm="6" md="4" class="pa-0">
+        <div class="d-flex">
+          <v-card class="rounded-md pa-2 pr-0 mt-7 mr-6 " width="170px" > sadsa </v-card>
+          <v-card class="rounded-md pa-2 pr-0 mt-7  ml-5" width="170px"> sadsa </v-card>
+        </div>
+        <v-card class="rounded-md pa-2 pr-0 mt-7 " width="385px" >asdasdasd</v-card>
+      </v-col>
+      <v-col cols="12" sm="6" md="8" class="pa-0"> 
+        <v-card class="rounded-md pa-2  mt-7 "  >asdasdasd</v-card>
+      </v-col>
+      </v-row>
     </v-content>
   </v-col>
 </template>
