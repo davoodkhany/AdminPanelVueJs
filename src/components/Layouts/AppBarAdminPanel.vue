@@ -20,10 +20,10 @@
 
       <App-Bar-Profile></App-Bar-Profile>
     </v-app-bar>
-    <v-content class="mt-3 d-flex">
+    <v-content class="mt-7 d-flex">
       <v-row no-gutters>
         <v-col cols="12" sm="6" md="4" class="">
-          <v-card width="400px" class="rounded-md d-flex pa-2">
+          <v-card width="385px" class="rounded-md d-flex pa-2">
             <div>
               <v-card-title class="text-p"> OVERLINE </v-card-title>
               <v-card-subtitle> You have won gold medal </v-card-subtitle>
@@ -56,10 +56,14 @@
             <div class="d-flex">
               <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
                 <v-icon
-                  style="font-size: 35px !important; padding: 3.7rem"
+                  style="
+                    font-size: 30px !important;
+                    padding: 3.7rem;
+                    background-color: rgba(115, 103, 240, 0.12);
+                  "
                   x-large
-                  color="blue"
-                  class="pa-2 rounded-circle blue lighten-4 mr-3"
+                  color="#7367f0"
+                  class="pa-2 rounded-circle mr-3"
                   >fa-light fa-wave-pulse</v-icon
                 >
                 <div>
@@ -69,11 +73,15 @@
               </div>
               <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
                 <v-icon
-                  style="font-size: 35px !important; padding: 3.7rem"
+                  style="
+                    font-size: 30px !important;
+                    padding: 15px !important;
+                    background-color: rgba(0, 207, 232, 0.12);
+                  "
                   x-large
-                  color="blue"
-                  class="pa-2 rounded-circle blue lighten-4 mr-3"
-                  >fa-light fa-wave-pulse</v-icon
+                  color="#00cfe8"
+                  class="pa-2 rounded-circle mr-3"
+                  >fa-light fa-user</v-icon
                 >
                 <div>
                   <h4 class="headline">230k</h4>
@@ -82,11 +90,15 @@
               </div>
               <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
                 <v-icon
-                  style="font-size: 35px !important; padding: 3.7rem"
+                  style="
+                    font-size: 30px !important;
+                    padding: 3.7rem;
+                    background-color: rgba(234, 84, 85, 0.12);
+                  "
                   x-large
-                  color="blue"
-                  class="pa-2 rounded-circle blue lighten-4 mr-3"
-                  >fa-light fa-wave-pulse</v-icon
+                  color="#ea5455"
+                  class="pa-2 rounded-circle mr-3"
+                  >fa-light fa-child</v-icon
                 >
                 <div>
                   <h4 class="headline">230k</h4>
@@ -95,11 +107,15 @@
               </div>
               <div class="col-xl-6 mb-2 d-flex" style="padding: 3rem 2rem">
                 <v-icon
-                  style="font-size: 35px !important; padding: 3.7rem"
+                  style="
+                    font-size: 30px !important;
+                    padding: 3.7rem;
+                    background-color: rgba(40, 199, 111, 0.12);
+                  "
                   x-large
-                  color="blue"
-                  class="pa-2 rounded-circle blue lighten-4 mr-3"
-                  >fa-light fa-wave-pulse</v-icon
+                  color="#28c76f"
+                  class="pa-2 rounded-circle mr-3"
+                  >fa-light fa-dollar-sign</v-icon
                 >
                 <div>
                   <h4 class="headline">230k</h4>
@@ -110,6 +126,17 @@
           </v-card>
         </v-col>
       </v-row>
+
+      
+        <v-col cols="12" sm="6" md="4">
+          <v-card class="rounded-md d-flex pa-2"> sadsa </v-card>
+          <v-card> asdasd </v-card>
+          <v-card class="mt-7 rounded-md d-flex pa-2"
+            >asdasdasd</v-card
+          >
+        </v-col>
+        <v-col cols="12" sm="6" md="8"> </v-col>
+  
     </v-content>
   </v-col>
 </template>
