@@ -131,15 +131,16 @@
         <v-col cols="12" sm="6" md="4" class="pa-0">
           <div class="d-flex">
             <v-card class="rounded-md pa-1 pr-0 mt-7 mr-6" width="385px">
-            <v-card-title>Orders </v-card-title>
+              <v-card-title>Orders </v-card-title>
               <v-card-subtitle> 2,76k </v-card-subtitle>
-              
-              <apexchart
-                width="350px"
-                type="bar"
-                :options="options"
-                :series="series"
-              />
+              <div id="chart">
+                <apexchart
+                  width="350px"
+                  type="bar"
+                  :options="options"
+                  :series="series"
+                />
+              </div>
             </v-card>
           </div>
           <v-card class="rounded-md pa-2 pr-0 mt-7" width="385px"
@@ -147,7 +148,14 @@
           >
         </v-col>
         <v-col cols="12" sm="6" md="8" class="pa-0">
-          <v-card class="rounded-md pa-2 mt-7">asdasdasd</v-card>
+          <v-card class="rounded-md pa-2 mt-7">
+            <apexchart
+              type="bar"
+              height="290"
+              :options="chartOptions"
+              :series="series2"
+            ></apexchart>
+          </v-card>
         </v-col>
       </v-row>
     </v-content>
@@ -239,6 +247,79 @@ export default {
         },
         fill: {
           opacity: 1,
+        },
+      },
+
+      series2: [
+        {
+          name: "Sales",
+          data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5],
+        },
+      ],
+      chartOptions2: {
+        chart: {
+          height: 350,
+          type: "line",
+        },
+        forecastDataPoints: {
+          count: 7,
+        },
+        stroke: {
+          width: 5,
+          curve: "smooth",
+        },
+        xaxis2: {
+          type: "datetime",
+          categories: [
+            "1/11/2000",
+            "2/11/2000",
+            "3/11/2000",
+            "4/11/2000",
+            "5/11/2000",
+            "6/11/2000",
+            "7/11/2000",
+            "8/11/2000",
+            "9/11/2000",
+            "10/11/2000",
+            "11/11/2000",
+            "12/11/2000",
+            "1/11/2001",
+            "2/11/2001",
+            "3/11/2001",
+            "4/11/2001",
+            "5/11/2001",
+            "6/11/2001",
+          ],
+          tickAmount: 10,
+          labels: {
+            formatter: function (value, timestamp, opts) {
+              return opts.dateFormatter(new Date(timestamp), "dd MMM");
+            },
+          },
+        },
+        title: {
+          text: "Forecast",
+          align: "left",
+          style: {
+            fontSize: "16px",
+            color: "#666",
+          },
+        },
+        fill: {
+          type: "gradient",
+          gradient: {
+            shade: "dark",
+            gradientToColors: ["#FDD835"],
+            shadeIntensity: 1,
+            type: "horizontal",
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [0, 100, 100, 100],
+          },
+        },
+        yaxis: {
+          min: -10,
+          max: 40,
         },
       },
     };
