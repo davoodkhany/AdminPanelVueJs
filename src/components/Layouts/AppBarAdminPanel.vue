@@ -127,17 +127,28 @@
         </v-col>
       </v-row>
 
-      <v-row class="m-0" style="margin:0px;">
-      <v-col cols="12" sm="6" md="4" class="pa-0">
-        <div class="d-flex">
-          <v-card class="rounded-md pa-2 pr-0 mt-7 mr-6 " width="170px" > sadsa </v-card>
-          <v-card class="rounded-md pa-2 pr-0 mt-7  ml-5" width="170px"> sadsa </v-card>
-        </div>
-        <v-card class="rounded-md pa-2 pr-0 mt-7 " width="385px" >asdasdasd</v-card>
-      </v-col>
-      <v-col cols="12" sm="6" md="8" class="pa-0"> 
-        <v-card class="rounded-md pa-2  mt-7 "  >asdasdasd</v-card>
-      </v-col>
+      <v-row class="m-0" style="margin: 0px">
+        <v-col cols="12" sm="6" md="4" class="pa-0">
+          <div class="d-flex">
+            <v-card class="rounded-md pa-1 pr-0 mt-7 mr-6" width="385px">
+            <v-card-title>Orders </v-card-title>
+              <v-card-subtitle> 2,76k </v-card-subtitle>
+              
+              <apexchart
+                width="350px"
+                type="bar"
+                :options="options"
+                :series="series"
+              />
+            </v-card>
+          </div>
+          <v-card class="rounded-md pa-2 pr-0 mt-7" width="385px"
+            >asdasdasd</v-card
+          >
+        </v-col>
+        <v-col cols="12" sm="6" md="8" class="pa-0">
+          <v-card class="rounded-md pa-2 mt-7">asdasdasd</v-card>
+        </v-col>
       </v-row>
     </v-content>
   </v-col>
@@ -148,14 +159,90 @@ import AppBarProfile from "./appbar/AppBarProfile.vue";
 import AppBarLeft from "./appbar/AppBarLeft.vue";
 import AppBarNotification from "./appbar/AppBarNotification.vue";
 import AppBarShop from "./appbar/AppBarShop.vue";
+import VueApexCharts from "vue-apexcharts";
+
 export default {
   components: {
     "App-Bar-Profile": AppBarProfile,
     "App-Bar-Left": AppBarLeft,
     "App-Bar-Notification": AppBarNotification,
     "App-Bar-Shop": AppBarShop,
+    apexchart: VueApexCharts,
   },
   props: ["mini"],
+
+  data() {
+    return {
+      options: {
+        xaxis: {
+          categories: [1991, 1988],
+        },
+      },
+      series: [
+        {
+          name: "PRODUCT A",
+          data: [100, 55, 41, 67, 22],
+        },
+        {
+          name: "PRODUCT B",
+          data: [13, 23, 20, 8, 13],
+        },
+        {
+          name: "PRODUCT C",
+          data: [11, 17, 15, 15, 21],
+        },
+      ],
+      chartOptions: {
+        chart: {
+          type: "bar",
+          height: 400,
+          stacked: false,
+          toolbar: {
+            show: false,
+          },
+          zoom: {
+            enabled: true,
+          },
+        },
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              legend: {
+                position: "bottom",
+                offsetX: -10,
+                offsetY: 0,
+              },
+            },
+          },
+        ],
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            borderRadius: 10,
+          },
+        },
+        xaxis: {
+          type: "datetime",
+          categories: [
+            "01/01/2011 GMT",
+            "01/02/2011 GMT",
+            "01/03/2011 GMT",
+            "01/04/2011 GMT",
+            "01/05/2011 GMT",
+            "01/06/2011 GMT",
+          ],
+        },
+        legend: {
+          position: "left",
+          offsetY: 40,
+        },
+        fill: {
+          opacity: 1,
+        },
+      },
+    };
+  },
 };
 </script>
 

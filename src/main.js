@@ -5,7 +5,6 @@ import 'animate.css';
 import colors from 'vuetify/lib/util/colors';
 
 
-
 import './assets/css/all.min.css';
 import './assets/css/brands.min.css';
 import './assets/css/duotone.min.css';
@@ -48,3 +47,4 @@ new Vue({
   vuetify : new Vuetify(),
   render: h => h(App)
 }).$mount("#app");
+
