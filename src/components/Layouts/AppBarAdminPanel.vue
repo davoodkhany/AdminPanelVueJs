@@ -1,6 +1,6 @@
 /* eslint-disable vue/valid-v-bind */
 <template>
-  <v-col :cols="mini ? 10 : 9"  >
+  <v-col  :cols="mini ? 10 : 9"  >
     <v-app-bar class="rounded-lg" color="white">
       <App-Bar-Left></App-Bar-Left>
 

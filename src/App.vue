@@ -6,7 +6,7 @@
 
         
           <AppBarAdminPanel
-            class="mt-10 " 
+            class="mt-10 " :class="[ mini ?  'm-right' : 'm-right' ] "
             style="max-height: 100vh !important"
             :mini="mini" 
           >
@@ -48,10 +48,10 @@ export default {
 }
 .m-left {
      
-    margin-left: 7rem;
+    margin-left: 78rem;
 
 }
 .m-right {
-      margin-left: 20rem;
+      margin-left: 10rem;
 }
 </style>
