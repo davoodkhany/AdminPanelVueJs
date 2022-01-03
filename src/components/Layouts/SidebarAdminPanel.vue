@@ -1,5 +1,5 @@
 <template>
-  <v-card p-5 style="padding: 20px" max-height="100vh">
+  <v-card p-5 style="padding: 20px; position: fixed;" max-height="100vh">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant.sync="mini"

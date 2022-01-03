@@ -6,9 +6,9 @@
 
         
           <AppBarAdminPanel
-            class="mt-10 ml-10"
+            class="mt-10 " 
             style="max-height: 100vh !important"
-            :mini="mini"
+            :mini="mini" 
           >
           </AppBarAdminPanel>
           <v-col cols="8">
@@ -45,5 +45,13 @@ export default {
 <style scoped>
 #app {
   background-color: #f5f5f5;
+}
+.m-left {
+     
+    margin-left: 7rem;
+
+}
+.m-right {
+      margin-left: 20rem;
 }
 </style>

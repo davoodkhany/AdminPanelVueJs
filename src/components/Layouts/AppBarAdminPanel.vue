@@ -1,6 +1,6 @@
 /* eslint-disable vue/valid-v-bind */
 <template>
-  <v-col :cols="mini ? 10 : 9">
+  <v-col :cols="mini ? 10 : 9"  >
     <v-app-bar class="rounded-lg" color="white">
       <App-Bar-Left></App-Bar-Left>
 
@@ -143,9 +143,6 @@
               </div>
             </v-card>
           </div>
-          <v-card class="rounded-md pa-2 pr-0 mt-7" width="385px"
-            >asdasdasd</v-card
-          >
         </v-col>
         <v-col cols="12" sm="6" md="8" class="pa-0">
           <v-card class="rounded-md pa-2 mt-7">
@@ -155,6 +152,30 @@
               :options="chartOptions"
               :series="series2"
             ></apexchart>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row class="m-0" style="margin: 0px">
+        <v-col cols="12" sm="6" md="4" class="pa-0">
+          <div class="d-flex">
+            <v-card class="rounded-md pa-1 pr-0 mt-7 mr-6" width="385px">
+              <v-card-title>Orders </v-card-title>
+              <v-card-subtitle> 2,76k </v-card-subtitle>
+              <div id="chart">
+                <apexchart
+                  width="350px"
+                  type="bar"
+                  :options="options"
+                  :series="series"
+                />
+              </div>
+            </v-card>
+          </div>
+        </v-col>
+        <v-col cols="12" sm="6" md="8" class="pa-0">
+          <v-card class="rounded-md pa-2 mt-7">
+sdfsdf
           </v-card>
         </v-col>
       </v-row>
@@ -339,4 +360,6 @@ export default {
 .fa {
   font-size: 20px !important;
 }
+
+
 </style>
